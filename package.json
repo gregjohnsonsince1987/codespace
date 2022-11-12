@@ -4,6 +4,20 @@
     "expressjs": "^1.0.1"
   },
   "scripts": {
-    "dev": "node index.js"
+    "dev": "node index.js",
+    "test": "karma start",
+    "test2": "jasmine --reporter=jasmine-ts-console-reporter",
+    "test:ci": "karma start --watch=false --browsers=ChromeHeadless"
+  },
+  "devDependencies": {
+    "jasmine": "^4.5.0",
+    "jasmine-ts-console-reporter": "^3.1.1",
+    "karma": "^6.4.1",
+    "karma-chrome-launcher": "^3.1.1",
+    "karma-firefox-launcher": "^2.1.2",
+    "karma-jasmine-html-reporter": "^2.0.0",
+    "karma-spec-reporter": "^0.0.34",
+    "nodemon": "^2.0.20",
+    "puppeteer": "^19.2.2"
   }
 }
